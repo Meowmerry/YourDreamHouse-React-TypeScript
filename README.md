@@ -1,4 +1,7 @@
 ## Your Dream House
+![Interior Design](https://user-images.githubusercontent.com/50789325/234722869-2561bf97-7e91-4ce1-a361-9c1f4b64ec93.gif)
+![homepage](https://user-images.githubusercontent.com/50789325/234723333-7da42e10-5492-4b89-aa31-e7b64183bd7d.png)
+
 
 ## Create project 
 npm init vite@latest
