@@ -9,7 +9,7 @@ const Home = ()=>{
        <video className="w-full" src={HomePageGraphic} autoPlay loop muted/>
        <div className={` 
        
-       absolute lg:top-64 md:top-2/4 xs:top-1/3 xs:text-4xl sm:top-1/3 left-20 hard-shadow sm:text-5xl md:text-7xl lg:text-4xl`}>
+       absolute lg:top-64 md:top-1/4 xs:top-1/3 xs:text-4xl sm:top-1/3 left-20 hard-shadow sm:text-5xl md:text-7xl lg:text-4xl`}>
         <div>Your Dream,</div> 
          <div>Home </div>
          </div>

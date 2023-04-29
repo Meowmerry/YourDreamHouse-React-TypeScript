@@ -1,5 +1,3 @@
-import Listing1 from "@/assets/listing1.png";
-import Listing2 from "@/assets/listing2.png";
 import ActionButton from "@/shared/ActionButton";
 import {SelectedPage} from "@/shared/types";
 import {dataHouseListing} from "@/shared/data";
@@ -12,9 +10,9 @@ const Listing = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between mt-8";
     return (
         <section id="home" className="md:h-full md:pb-0">
-            <nav className="text-gray-600 p-8 font-semibold text-lg">OUT CURRENT LISTINGS</nav>
+            <nav className="text-gray-600 p-8 font-semibold text-2xl">OUT CURRENT LISTINGS</nav>
             {dataHouseListing.map((element) =>
-                <div className="flex">
+                <div className="flex" key={element.id}>
                     <div className="flex-1 w-1/2">
                         <img alt="logo" src={element.img} className="w-full" />
                     </div>

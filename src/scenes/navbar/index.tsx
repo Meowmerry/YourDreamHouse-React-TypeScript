@@ -11,10 +11,11 @@ type Props = {
   const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     const flexBetween = "flex items-center justify-between";
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+    const navbarBackground = isTopOfPage ? "" : "bg-white drop-shadow";
     return (
         <nav>
         <div
-          className={`${flexBetween} top-0 z-30 w-full py-6`}
+          className={`${navbarBackground}  ${flexBetween} fixed top-0 z-30 w-full py-4`}
         >
           <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} `}>
