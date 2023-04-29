@@ -16,3 +16,9 @@ export interface ClassType {
     description?: string;
     image: string;
 }
+export type ListingData = {
+    img: string;
+    detail: string;
+    descriptions: string;
+
+};

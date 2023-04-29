@@ -1,19 +1,35 @@
 import Listing1 from "@/assets/listing1.png";
-const Listing = ()=>{
+import Listing2 from "@/assets/listing2.png";
+import ActionButton from "@/shared/ActionButton";
+import {SelectedPage} from "@/shared/types";
+import {dataHouseListing} from "@/shared/data";
+type Props = {
+    isTopOfPage?: boolean;
+    selectedPage?: SelectedPage;
+    setSelectedPage?: (value: SelectedPage) => void;
+};
+const Listing = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+    const flexBetween = "flex items-center justify-between mt-8";
     return (
         <section id="home" className="md:h-full md:pb-0">
-        <nav>OUT CURRENT LISTINGS</nav>
-        <div className="flex ">
-            <div className="flex-1 w-1/2">
-            <img alt="logo" src={Listing1} className="w-full"/>
-            </div>
-            <div className="flex-1 w-1/2  px-12 ">
-                <div>8,000 sq. ft. mixed-use property in Santa Solana</div>
-                <div>Entice prospective buyers with a clearly written description that lists your property's most attractive feature.</div>
-            <div>INQUIRE NOW</div>
-            </div>
-        </div>
+            <nav className="text-gray-600 p-8 font-semibold text-lg">OUT CURRENT LISTINGS</nav>
+            {dataHouseListing.map((element) =>
+                <div className="flex">
+                    <div className="flex-1 w-1/2">
+                        <img alt="logo" src={element.img} className="w-full" />
+                    </div>
+                    <div className="flex-1 w-1/2  p-20 pt-20">
+                        <div className="text-3xl font-black pt-14">{element.detail}</div>
+                        <div className="pl-28 pt-4 text-lg"> <div >{element.descriptions}</div>
+                            <div className={`${flexBetween}`}>
+                                <ActionButton setSelectedPage={setSelectedPage}>
+                                    INQUIRE NOW
+                                </ActionButton>
+                            </div></div>
+                    </div>
+                </div>
+            )}
         </section>
-    )
-}
-export default Listing
+    );
+};
+export default Listing;
