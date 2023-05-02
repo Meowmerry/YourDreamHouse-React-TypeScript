@@ -34,6 +34,7 @@ The app should now be running on http://localhost:3000
 ```npm init vite@latest```
 
 ## Install and configuration
+
 ```
 - npm i -D @types/react-anchor-link-smooth-scroll@1.0.2 @types/node
 - npm install -D tailwindcss postcss autoprefixer
@@ -41,11 +42,11 @@ The app should now be running on http://localhost:3000
 ```
 
 ## Set up vite.config.ts
+
 ```js
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-
 
 export default defineConfig({
   
@@ -56,7 +57,6 @@ export default defineConfig({
     alias: [
         {find: "@", replacement: path.resolve(__dirname, "src")}]}
 });
-
 ```
 
 ## Authors
