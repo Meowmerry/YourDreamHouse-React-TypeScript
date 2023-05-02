@@ -9,18 +9,18 @@ This project is a web application that helps users to visualize their dream hous
 To run this project, you need to have Node.js and npm installed on your machine.
 
 ## Installing
-git clone https://github.com/Meowmerry/YourDreamHouse-React-TypeScript
+```git clone https://github.com/Meowmerry/YourDreamHouse-React-TypeScript```
 
 
 ## Navigate to the project directory:
 
 cd YourDreamHouse-React-TypeScript
 
-npm install
+```npm install```
 
 ## Running the App
 To start the app, run:
-npm run dev
+```npm run dev```
 
 
 The app should now be running on http://localhost:3000
@@ -31,22 +31,21 @@ The app should now be running on http://localhost:3000
 - Tailwind CSS - A utility-first CSS framework for rapidly building custom user interfaces.
 
 
-npm init vite@latest
+```npm init vite@latest```
 
 ## Install and configuration
+```
 - npm i -D @types/react-anchor-link-smooth-scroll@1.0.2 @types/node
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
-
+```
 
 ## Set up vite.config.ts
-<code>import {defineConfig} from 'vite';</code>
+```js
+import {defineConfig} from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
-<code> import react from '@vitejs/plugin-react';</code>
-
-import path from 'path';</code>
-
-<code>
 
 export default defineConfig({
   
@@ -58,7 +57,7 @@ export default defineConfig({
         {find: "@", replacement: path.resolve(__dirname, "src")}]}
 });
 
-</code>
+```
 
 ## Authors
 - Thasanee 
