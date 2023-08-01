@@ -6,7 +6,7 @@ type Props = {
     selectedPage?: SelectedPage;
     setSelectedPage?: (value: SelectedPage) => void;
 };
-const Listing = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+const Listing = ({setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between mt-8";
     return (
         <section id="home" className="md:h-full md:pb-0">

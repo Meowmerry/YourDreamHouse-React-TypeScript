@@ -1,6 +1,5 @@
 
 import Logo from "@/assets/logo.png";
-import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 type Props = {
@@ -8,9 +7,9 @@ type Props = {
     selectedPage?: SelectedPage;
     setSelectedPage?: (value: SelectedPage) => void;
   };
-  const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+  const Navbar = ({ isTopOfPage, setSelectedPage }: Props) => {
     const flexBetween = "flex items-center justify-between";
-    const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+    // const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
     const navbarBackground = isTopOfPage ? "" : "bg-white drop-shadow";
     return (
         <nav>
